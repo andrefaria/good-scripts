@@ -1,0 +1,3 @@
+#!/bin/bash
+TEXT="PATH=\"${PWD}:\${PATH}\""; export PATH;
+echo $TEXT >> ~/.bash_profile

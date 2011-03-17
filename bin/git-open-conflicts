@@ -1,0 +1,5 @@
+#!/bin/bash
+echo 'Opening conflicts...'
+conflict_files=$(git status | grep both | awk '{print $4}'); 
+echo $conflict_files
+mate $conflict_files
