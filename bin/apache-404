@@ -1,0 +1,3 @@
+#!/bin/bash
+# reads the apache log file and sprints the 404 errors sorted without duplicates
+cat /var/log/httpd/access_log | grep " 404" | awk '{print $7}' | sed -e s/?.*//  | awk '!a[$0]++' | sort
