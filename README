@@ -1,9 +1,9 @@
-This project contains some helpful scripts that I use in daily development.
+This project contains some helpful scripts that we use in daily development at Bluesoft.
 Feel comfortable to fork, improve, add new scripts or features, and pull it back.
 
-To Install it in your Mac or Linux, just execute the following commands:
-git clone git://github.com/andrefaria/good-scripts.git;
+To install it in your Mac or Linux machine, just execute the following commands:
 
+git clone git://github.com/bluesoft/good-scripts.git;
 cd good-scripts/bin;
 chmod +x *;
 ./add-this-folder-to-path;
