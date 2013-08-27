@@ -1,0 +1,24 @@
+cd "$WORKSPACE";
+for i in *; do
+  cd "$WORKSPACE/$i";
+
+  if [ -d ".git" ] ; then
+    echo "Executing git $@ on "$i;
+    git $@;
+  fi
+
+  for a in *; do
+
+    if [ -d "$a" ] ; then
+	    cd "$WORKSPACE/$i/$a";
+
+		if [ -d ".git" ] ; then
+	      	echo "Executing git $@ on "$i;
+            git $@;
+		fi
+	fi
+
+    cd ..;
+  done
+  cd ..;
+done
