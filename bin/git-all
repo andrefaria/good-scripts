@@ -13,7 +13,7 @@ for i in *; do
 	    cd "$WORKSPACE/$i/$a";
 
 		if [ -d ".git" ] ; then
-	      	echo "Executing git $@ on "$i;
+	      	echo "Executing git $@ on "$i/$a;
             git $@;
 		fi
 	fi
