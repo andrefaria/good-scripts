@@ -1,0 +1,30 @@
+[user]
+	name = 
+	email = 
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+	ui = true
+[color "branch"]
+	current = yellow reverse
+ 	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+[alias]
+	s = status
+	c = commit
+	b = branch
+	l = log
+	p = pull
+	co = checkout
+[github]
+	user = 
