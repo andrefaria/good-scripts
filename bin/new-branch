@@ -1,0 +1,10 @@
+#!/bin/sh
+ 
+NEW_BRANCH="$1"
+BRANCH_SOURCE=$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')
+
+echo "Criando branch $NEW_BRANCH a partir de $BRANCH_SOURCE ..."
+git push origin $BRANCH_SOURCE:$NEW_BRANCH
+git checkout $NEW_BRANCH
+git pull
+echo "Branch $NEW_BRANCH criada =)"
